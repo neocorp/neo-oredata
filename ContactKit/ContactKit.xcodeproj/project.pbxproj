@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED6AD21919EAEC3C00D452FF /* CKNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6AD21819EAEC3C00D452FF /* CKNetworkManager.m */; };
+		ED6AD21C19EAF8B900D452FF /* ContactKitTester.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6AD21B19EAF8B900D452FF /* ContactKitTester.m */; };
+		ED6AD34219EB030B00D452FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6AD34119EB030B00D452FF /* main.m */; };
+		ED6AD34519EB030B00D452FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6AD34419EB030B00D452FF /* AppDelegate.m */; };
+		ED6AD34819EB030B00D452FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6AD34719EB030B00D452FF /* ViewController.m */; };
+		ED6AD34B19EB030B00D452FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED6AD34919EB030B00D452FF /* Main.storyboard */; };
+		ED6AD34D19EB030B00D452FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6AD34C19EB030B00D452FF /* Images.xcassets */; };
+		ED6AD35019EB030B00D452FF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED6AD34E19EB030B00D452FF /* LaunchScreen.xib */; };
+		ED6AD35C19EB030B00D452FF /* CK_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6AD35B19EB030B00D452FF /* CK_DemoTests.m */; };
+		EDFD052419E9BC29004EA588 /* CKAddressBook.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EDFD052319E9BC29004EA588 /* CKAddressBook.h */; };
+		EDFD052619E9BC29004EA588 /* CKAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFD052519E9BC29004EA588 /* CKAddressBook.m */; };
+		EDFD053919E9C1B3004EA588 /* CKContact.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFD053819E9C1B3004EA588 /* CKContact.m */; };
+		EDFD053C19E9C226004EA588 /* CKAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFD053B19E9C226004EA588 /* CKAddress.m */; };
+		EDFD053F19E9C2C8004EA588 /* CKPhoneLabelType.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFD053E19E9C2C8004EA588 /* CKPhoneLabelType.m */; };
+		EDFD054219E9C399004EA588 /* CKSocialAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFD054119E9C399004EA588 /* CKSocialAccount.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED6AD35619EB030B00D452FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFD051819E9BC29004EA588 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED6AD33C19EB030B00D452FF;
+			remoteInfo = "CK-Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EDFD051E19E9BC29004EA588 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				EDFD052419E9BC29004EA588 /* CKAddressBook.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		ED6AD21619EAEBD200D452FF /* CKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKConstants.h; sourceTree = "<group>"; };
+		ED6AD21719EAEC3C00D452FF /* CKNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKNetworkManager.h; sourceTree = "<group>"; };
+		ED6AD21819EAEC3C00D452FF /* CKNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKNetworkManager.m; sourceTree = "<group>"; };
+		ED6AD21A19EAF8B900D452FF /* ContactKitTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactKitTester.h; sourceTree = "<group>"; };
+		ED6AD21B19EAF8B900D452FF /* ContactKitTester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactKitTester.m; sourceTree = "<group>"; };
+		ED6AD33D19EB030B00D452FF /* CK-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CK-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6AD34019EB030B00D452FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED6AD34119EB030B00D452FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ED6AD34319EB030B00D452FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ED6AD34419EB030B00D452FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ED6AD34619EB030B00D452FF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ED6AD34719EB030B00D452FF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ED6AD34A19EB030B00D452FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED6AD34C19EB030B00D452FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ED6AD34F19EB030B00D452FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		ED6AD35519EB030B00D452FF /* CK-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CK-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6AD35A19EB030B00D452FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED6AD35B19EB030B00D452FF /* CK_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CK_DemoTests.m; sourceTree = "<group>"; };
+		EDFD052019E9BC29004EA588 /* libContactKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libContactKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDFD052319E9BC29004EA588 /* CKAddressBook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKAddressBook.h; sourceTree = "<group>"; };
+		EDFD052519E9BC29004EA588 /* CKAddressBook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKAddressBook.m; sourceTree = "<group>"; };
+		EDFD052B19E9BC29004EA588 /* ContactKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDFD052E19E9BC29004EA588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDFD053719E9C1B3004EA588 /* CKContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKContact.h; sourceTree = "<group>"; };
+		EDFD053819E9C1B3004EA588 /* CKContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKContact.m; sourceTree = "<group>"; };
+		EDFD053A19E9C226004EA588 /* CKAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAddress.h; sourceTree = "<group>"; };
+		EDFD053B19E9C226004EA588 /* CKAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKAddress.m; sourceTree = "<group>"; };
+		EDFD053D19E9C2C8004EA588 /* CKPhoneLabelType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKPhoneLabelType.h; sourceTree = "<group>"; };
+		EDFD053E19E9C2C8004EA588 /* CKPhoneLabelType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKPhoneLabelType.m; sourceTree = "<group>"; };
+		EDFD054019E9C399004EA588 /* CKSocialAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSocialAccount.h; sourceTree = "<group>"; };
+		EDFD054119E9C399004EA588 /* CKSocialAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKSocialAccount.m; sourceTree = "<group>"; };
+		EDFD054319EADF3A004EA588 /* CKAccessType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAccessType.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED6AD33A19EB030B00D452FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6AD35219EB030B00D452FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDFD051D19E9BC29004EA588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDFD052819E9BC29004EA588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED6AD33E19EB030B00D452FF /* CK-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				ED6AD34319EB030B00D452FF /* AppDelegate.h */,
+				ED6AD34419EB030B00D452FF /* AppDelegate.m */,
+				ED6AD34619EB030B00D452FF /* ViewController.h */,
+				ED6AD34719EB030B00D452FF /* ViewController.m */,
+				ED6AD34919EB030B00D452FF /* Main.storyboard */,
+				ED6AD34C19EB030B00D452FF /* Images.xcassets */,
+				ED6AD34E19EB030B00D452FF /* LaunchScreen.xib */,
+				ED6AD33F19EB030B00D452FF /* Supporting Files */,
+			);
+			path = "CK-Demo";
+			sourceTree = "<group>";
+		};
+		ED6AD33F19EB030B00D452FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED6AD34019EB030B00D452FF /* Info.plist */,
+				ED6AD34119EB030B00D452FF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED6AD35819EB030B00D452FF /* CK-DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED6AD35B19EB030B00D452FF /* CK_DemoTests.m */,
+				ED6AD35919EB030B00D452FF /* Supporting Files */,
+			);
+			path = "CK-DemoTests";
+			sourceTree = "<group>";
+		};
+		ED6AD35919EB030B00D452FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED6AD35A19EB030B00D452FF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDFD051719E9BC29004EA588 = {
+			isa = PBXGroup;
+			children = (
+				EDFD052219E9BC29004EA588 /* ContactKit */,
+				EDFD052C19E9BC29004EA588 /* ContactKitTests */,
+				ED6AD33E19EB030B00D452FF /* CK-Demo */,
+				ED6AD35819EB030B00D452FF /* CK-DemoTests */,
+				EDFD052119E9BC29004EA588 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDFD052119E9BC29004EA588 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDFD052019E9BC29004EA588 /* libContactKit.a */,
+				EDFD052B19E9BC29004EA588 /* ContactKitTests.xctest */,
+				ED6AD33D19EB030B00D452FF /* CK-Demo.app */,
+				ED6AD35519EB030B00D452FF /* CK-DemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDFD052219E9BC29004EA588 /* ContactKit */ = {
+			isa = PBXGroup;
+			children = (
+				EDFD052319E9BC29004EA588 /* CKAddressBook.h */,
+				EDFD052519E9BC29004EA588 /* CKAddressBook.m */,
+				EDFD053719E9C1B3004EA588 /* CKContact.h */,
+				EDFD053819E9C1B3004EA588 /* CKContact.m */,
+				EDFD053A19E9C226004EA588 /* CKAddress.h */,
+				EDFD053B19E9C226004EA588 /* CKAddress.m */,
+				EDFD053D19E9C2C8004EA588 /* CKPhoneLabelType.h */,
+				EDFD053E19E9C2C8004EA588 /* CKPhoneLabelType.m */,
+				EDFD054019E9C399004EA588 /* CKSocialAccount.h */,
+				EDFD054119E9C399004EA588 /* CKSocialAccount.m */,
+				EDFD054319EADF3A004EA588 /* CKAccessType.h */,
+				ED6AD21619EAEBD200D452FF /* CKConstants.h */,
+				ED6AD21719EAEC3C00D452FF /* CKNetworkManager.h */,
+				ED6AD21819EAEC3C00D452FF /* CKNetworkManager.m */,
+			);
+			path = ContactKit;
+			sourceTree = "<group>";
+		};
+		EDFD052C19E9BC29004EA588 /* ContactKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDFD052D19E9BC29004EA588 /* Supporting Files */,
+				ED6AD21A19EAF8B900D452FF /* ContactKitTester.h */,
+				ED6AD21B19EAF8B900D452FF /* ContactKitTester.m */,
+			);
+			path = ContactKitTests;
+			sourceTree = "<group>";
+		};
+		EDFD052D19E9BC29004EA588 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDFD052E19E9BC29004EA588 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED6AD33C19EB030B00D452FF /* CK-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED6AD36119EB030B00D452FF /* Build configuration list for PBXNativeTarget "CK-Demo" */;
+			buildPhases = (
+				ED6AD33919EB030B00D452FF /* Sources */,
+				ED6AD33A19EB030B00D452FF /* Frameworks */,
+				ED6AD33B19EB030B00D452FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CK-Demo";
+			productName = "CK-Demo";
+			productReference = ED6AD33D19EB030B00D452FF /* CK-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED6AD35419EB030B00D452FF /* CK-DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED6AD36219EB030B00D452FF /* Build configuration list for PBXNativeTarget "CK-DemoTests" */;
+			buildPhases = (
+				ED6AD35119EB030B00D452FF /* Sources */,
+				ED6AD35219EB030B00D452FF /* Frameworks */,
+				ED6AD35319EB030B00D452FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED6AD35719EB030B00D452FF /* PBXTargetDependency */,
+			);
+			name = "CK-DemoTests";
+			productName = "CK-DemoTests";
+			productReference = ED6AD35519EB030B00D452FF /* CK-DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDFD051F19E9BC29004EA588 /* ContactKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDFD053119E9BC29004EA588 /* Build configuration list for PBXNativeTarget "ContactKit" */;
+			buildPhases = (
+				EDFD051C19E9BC29004EA588 /* Sources */,
+				EDFD051D19E9BC29004EA588 /* Frameworks */,
+				EDFD051E19E9BC29004EA588 /* CopyFiles */,
+				ED6AD27019EAFECB00D452FF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContactKit;
+			productName = ContactKit;
+			productReference = EDFD052019E9BC29004EA588 /* libContactKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EDFD052A19E9BC29004EA588 /* ContactKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDFD053419E9BC29004EA588 /* Build configuration list for PBXNativeTarget "ContactKitTests" */;
+			buildPhases = (
+				EDFD052719E9BC29004EA588 /* Sources */,
+				EDFD052819E9BC29004EA588 /* Frameworks */,
+				EDFD052919E9BC29004EA588 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContactKitTests;
+			productName = ContactKitTests;
+			productReference = EDFD052B19E9BC29004EA588 /* ContactKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDFD051819E9BC29004EA588 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Niyazi Erdogan";
+				TargetAttributes = {
+					ED6AD33C19EB030B00D452FF = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					ED6AD35419EB030B00D452FF = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = ED6AD33C19EB030B00D452FF;
+					};
+					EDFD051F19E9BC29004EA588 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					EDFD052A19E9BC29004EA588 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = EDFD051B19E9BC29004EA588 /* Build configuration list for PBXProject "ContactKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDFD051719E9BC29004EA588;
+			productRefGroup = EDFD052119E9BC29004EA588 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDFD051F19E9BC29004EA588 /* ContactKit */,
+				EDFD052A19E9BC29004EA588 /* ContactKitTests */,
+				ED6AD33C19EB030B00D452FF /* CK-Demo */,
+				ED6AD35419EB030B00D452FF /* CK-DemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED6AD33B19EB030B00D452FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6AD34B19EB030B00D452FF /* Main.storyboard in Resources */,
+				ED6AD35019EB030B00D452FF /* LaunchScreen.xib in Resources */,
+				ED6AD34D19EB030B00D452FF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6AD35319EB030B00D452FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDFD052919E9BC29004EA588 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ED6AD27019EAFECB00D452FF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#\n# c.f. StackOverflow question/answer here: http://stackoverflow.com/questions/3520977/build-fat-static-library-device-simulator-using-xcode-and-sdk-4\n#\n# Version 2.3\n#\n# Latest Change:\n# - Apple's handling of \"project files\" is broken; added a workaround for Xcode 4.5\n# - Added automatic FAIL BUILD if any of the internal commands fail\n#\n# Purpose:\n#   Create a static library for iPhone from within XCode\n#   Because Apple staff DELIBERATELY broke Xcode to make this impossible from the GUI (Xcode 3.2.3 specifically states this in the Release notes!)\n#   ...no, I don't understand why they did this!\n#\n# Based on: original script from Eonil (main changes: Eonil's script WILL NOT WORK in Xcode GUI - it WILL CRASH YOUR COMPUTER)\n#\n\nset -e\nset -o pipefail\n\n#################[ Tests: helps workaround any future bugs in Xcode ]########\n#\nDEBUG_THIS_SCRIPT=\"true\"\n\nif [ $DEBUG_THIS_SCRIPT = \"true\" ]\nthen\necho \"########### TESTS #############\"\necho \"Use the following variables when debugging this script; note that they may change on recursions\"\necho \"BUILD_DIR = $BUILD_DIR\"\necho \"BUILD_ROOT = $BUILD_ROOT\"\necho \"CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR\"\necho \"BUILT_PRODUCTS_DIR = $BUILT_PRODUCTS_DIR\"\necho \"CONFIGURATION_TEMP_DIR = $CONFIGURATION_TEMP_DIR\"\necho \"TARGET_BUILD_DIR = $TARGET_BUILD_DIR\"\nfi\n\n#####################[ part 1 ]##################\n# First, work out the BASESDK version number (NB: Apple ought to report this, but they hide it)\n#    (incidental: searching for substrings in sh is a nightmare! Sob)\n\nSDK_VERSION=$(echo ${SDK_NAME} | grep -o '.\\{3\\}$')\n\n# Next, work out if we're in SIM or DEVICE\n\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]\nthen\nOTHER_SDK_TO_BUILD=iphoneos${SDK_VERSION}\nelse\nOTHER_SDK_TO_BUILD=iphonesimulator${SDK_VERSION}\nfi\n\necho \"XCode has selected SDK: ${PLATFORM_NAME} with version: ${SDK_VERSION} (although back-targetting: ${IPHONEOS_DEPLOYMENT_TARGET})\"\necho \"...therefore, OTHER_SDK_TO_BUILD = ${OTHER_SDK_TO_BUILD}\"\n#\n#####################[ end of part 1 ]##################\n\n#####################[ part 2 ]##################\n#\n# IF this is the original invocation, invoke WHATEVER other builds are required\n#\n# Xcode is already building ONE target...\n#\n# ...but this is a LIBRARY, so Apple is wrong to set it to build just one.\n# ...we need to build ALL targets\n# ...we MUST NOT re-build the target that is ALREADY being built: Xcode WILL CRASH YOUR COMPUTER if you try this (infinite recursion!)\n#\n#\n# So: build ONLY the missing platforms/configurations.\n\nif [ \"true\" == ${ALREADYINVOKED:-false} ]\nthen\necho \"RECURSION: I am NOT the root invocation, so I'm NOT going to recurse\"\nelse\n# CRITICAL:\n# Prevent infinite recursion (Xcode sucks)\nexport ALREADYINVOKED=\"true\"\n\necho \"RECURSION: I am the root ... recursing all missing build targets NOW...\"\necho \"RECURSION: ...about to invoke: xcodebuild -configuration \\\"${CONFIGURATION}\\\" -project \\\"${PROJECT_NAME}.xcodeproj\\\" -target \\\"${TARGET_NAME}\\\" -sdk \\\"${OTHER_SDK_TO_BUILD}\\\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO\" BUILD_DIR=\\\"${BUILD_DIR}\\\" BUILD_ROOT=\\\"${BUILD_ROOT}\\\"\n\nxcodebuild -configuration \"${CONFIGURATION}\" -project \"${PROJECT_NAME}.xcodeproj\" -target \"${TARGET_NAME}\" -sdk \"${OTHER_SDK_TO_BUILD}\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\nACTION=\"build\"\n\n#Merge all platform binaries as a fat binary for each configurations.\n\n# Calculate where the (multiple) built files are coming from:\nCURRENTCONFIG_DEVICE_DIR=${SYMROOT}/${CONFIGURATION}-iphoneos\nCURRENTCONFIG_SIMULATOR_DIR=${SYMROOT}/${CONFIGURATION}-iphonesimulator\n\necho \"Taking device build from: ${CURRENTCONFIG_DEVICE_DIR}\"\necho \"Taking simulator build from: ${CURRENTCONFIG_SIMULATOR_DIR}\"\n\nCREATING_UNIVERSAL_DIR=${SYMROOT}/${CONFIGURATION}-universal\necho \"...I will output a universal build to: ${CREATING_UNIVERSAL_DIR}\"\n\n# ... remove the products of previous runs of this script\n#      NB: this directory is ONLY created by this script - it should be safe to delete!\n\nrm -rf \"${CREATING_UNIVERSAL_DIR}\"\nmkdir \"${CREATING_UNIVERSAL_DIR}\"\n\n#\necho \"Abou to call: lipo -create -output \\\"${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\\\" \\\"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\\\" \\\"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\\\"\"\n\nlipo -create -output \"${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\"\n\n#########\n#\n# Added: StackOverflow suggestion to also copy \"include\" files\n#    (untested, but should work OK)\n#\nif [ -d \"${CURRENTCONFIG_DEVICE_DIR}/usr/local/include\" ]\nthen\nmkdir -p \"${CREATING_UNIVERSAL_DIR}/usr/local/include\"\n# * needs to be outside the double quotes?\ncp -r \"${CURRENTCONFIG_DEVICE_DIR}/usr/local/include/\"* \"${CREATING_UNIVERSAL_DIR}/usr/local/include\"\nfi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED6AD33919EB030B00D452FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6AD34819EB030B00D452FF /* ViewController.m in Sources */,
+				ED6AD34519EB030B00D452FF /* AppDelegate.m in Sources */,
+				ED6AD34219EB030B00D452FF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6AD35119EB030B00D452FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6AD35C19EB030B00D452FF /* CK_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDFD051C19E9BC29004EA588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDFD053919E9C1B3004EA588 /* CKContact.m in Sources */,
+				EDFD053C19E9C226004EA588 /* CKAddress.m in Sources */,
+				ED6AD21919EAEC3C00D452FF /* CKNetworkManager.m in Sources */,
+				EDFD052619E9BC29004EA588 /* CKAddressBook.m in Sources */,
+				EDFD053F19E9C2C8004EA588 /* CKPhoneLabelType.m in Sources */,
+				EDFD054219E9C399004EA588 /* CKSocialAccount.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDFD052719E9BC29004EA588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6AD21C19EAF8B900D452FF /* ContactKitTester.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED6AD35719EB030B00D452FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED6AD33C19EB030B00D452FF /* CK-Demo */;
+			targetProxy = ED6AD35619EB030B00D452FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED6AD34919EB030B00D452FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED6AD34A19EB030B00D452FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED6AD34E19EB030B00D452FF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED6AD34F19EB030B00D452FF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED6AD35D19EB030B00D452FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CK-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ED6AD35E19EB030B00D452FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_NS_ASSERTIONS = NO;
+				INFOPLIST_FILE = "CK-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ED6AD35F19EB030B00D452FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CK-DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CK-Demo.app/CK-Demo";
+			};
+			name = Debug;
+		};
+		ED6AD36019EB030B00D452FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CK-DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CK-Demo.app/CK-Demo";
+			};
+			name = Release;
+		};
+		EDFD052F19E9BC29004EA588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EDFD053019E9BC29004EA588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDFD053219E9BC29004EA588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_PATH = "$(PROJECT_DIR)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				fsdf = "";
+			};
+			name = Debug;
+		};
+		EDFD053319E9BC29004EA588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_PATH = "$(PROJECT_DIR)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				fsdf = "";
+			};
+			name = Release;
+		};
+		EDFD053519E9BC29004EA588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ContactKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EDFD053619E9BC29004EA588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ContactKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED6AD36119EB030B00D452FF /* Build configuration list for PBXNativeTarget "CK-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED6AD35D19EB030B00D452FF /* Debug */,
+				ED6AD35E19EB030B00D452FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ED6AD36219EB030B00D452FF /* Build configuration list for PBXNativeTarget "CK-DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED6AD35F19EB030B00D452FF /* Debug */,
+				ED6AD36019EB030B00D452FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EDFD051B19E9BC29004EA588 /* Build configuration list for PBXProject "ContactKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDFD052F19E9BC29004EA588 /* Debug */,
+				EDFD053019E9BC29004EA588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDFD053119E9BC29004EA588 /* Build configuration list for PBXNativeTarget "ContactKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDFD053219E9BC29004EA588 /* Debug */,
+				EDFD053319E9BC29004EA588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDFD053419E9BC29004EA588 /* Build configuration list for PBXNativeTarget "ContactKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDFD053519E9BC29004EA588 /* Debug */,
+				EDFD053619E9BC29004EA588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDFD051819E9BC29004EA588 /* Project object */;
+}
